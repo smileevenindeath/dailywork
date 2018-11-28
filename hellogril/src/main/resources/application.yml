@@ -1,0 +1,30 @@
+#server:
+##  port: 8081
+##  context-path: /gril
+##  servlet-path: /
+##
+##cupSize: C
+##age: 18
+##content: "cupSize: ${cupSize}, age : ${age}}"
+##
+##gril:
+##  cupSize: C
+##  age: 18
+
+# 多配置文件   选择加载
+spring:
+  profiles:
+    active: dev
+    #active: prod
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/dbgril
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update # update  创建 保留原有数据
+    show-sql: true
+
+
+
