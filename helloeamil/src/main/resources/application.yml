@@ -1,0 +1,6 @@
+spring:
+  mail:
+    host: smtp.163.com
+    username: zhou_shengfeng@163.com
+    password: zsf19970425sq  #客户端授权码 不是登陆密码
+    default-encoding: utf-8
